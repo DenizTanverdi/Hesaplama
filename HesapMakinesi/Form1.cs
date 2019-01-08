@@ -25,8 +25,17 @@ namespace HesapMakinesi
 
             foreach (var item in methods)
             {
-                comboBox1.Items.Add(item);
-                comboBox1.DisplayMember = "ıtems.Name";
+                if (item.Name=="ToString" || item.Name=="Equals" || item.Name== "GetMethodInfo" ||item.Name== "GetHashCode" || item.Name== "GetType")
+                {
+
+                }
+                else
+                {
+                    comboBox1.Items.Add(item);
+                    comboBox1.DisplayMember = "ıtems.Name";
+
+                }
+                
             }
         }
 

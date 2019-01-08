@@ -10,7 +10,7 @@ namespace Hesaplama
     {
         static void Main(string[] args)
         {
-            //
+            
         }
     }
 }
